@@ -5,11 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "jest --verbose",
-    "test:watch": "npm run test -- --watch",
-    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
-    "build": "webpack -p"
+    "jest": "jest --verbose --runInBand",
+    "test": "npm run jest",
+    "test:watch": "npm run jest -- --watch",
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
   },
   "jest": {
     "moduleNameMapper": {
@@ -30,6 +30,7 @@
   "devDependencies": {
     "eslint": "^5.14.0",
     "jest": "^24.3.0",
+    "morgan": "^1.9.1",
     "nodemon": "^1.18.10"
   }
 }
