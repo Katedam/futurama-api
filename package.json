@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mongoose": "^5.4.18",
     "node-html-parser": "^1.1.12",
     "normalize.css": "^8.0.1",
     "react": "^16.8.2",
