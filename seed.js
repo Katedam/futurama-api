@@ -48,6 +48,11 @@ fetchFuturamaData()
           quote
         };
       }
+      if(quote.character) {
+        return {
+          ...quote
+        };
+      }
     });
   })
   .then(quotesWithImages => Quote.create(quotesWithImages))
