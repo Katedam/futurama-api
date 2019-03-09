@@ -10,25 +10,42 @@ const benderImage = 'https://imgur.com/TQbrGRN';
 const fryImage = 'https://imgur.com/aLPxYmf';
 const leelaImage = 'https://imgur.com/uo3u9u1';
 
+const replaceNewlineInQuote = quote => quote.replace(/\r?\n|\r/g, ' '); 
+
 fetchFuturamaData()
   .then(quotes => {
-    return quotes.map(quote => {
-      if(quote.character === 'Bender') {
+    return quotes.map(quoteObj => {
+
+      const quote = replaceNewlineInQuote(quoteObj.quote);
+
+      if(quoteObj.character === 'Bender') {
         return {
-          ...quote,
+          ...quoteObj,
           image: benderImage,
+          quote
         };
       } 
-      if(quote.character === 'Leela') {
+
+      if(quoteObj.character === 'Leela') {
         return {
-          ...quote,
+          ...quoteObj,
           image: leelaImage,
+          quote
         };
       }
-      if(quote.character === 'Fry') {
+
+      if(quoteObj.character === 'Fry') {
         return {
-          ...quote,
+          ...quoteObj,
           image: fryImage,
+          quote
+        };
+      }
+
+      if(quoteObj.character) {
+        return {
+          ...quoteObj,
+          quote
         };
       }
     });
