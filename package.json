@@ -25,7 +25,8 @@
     "express": "^4.16.4",
     "mongoose": "^5.4.18",
     "node-html-parser": "^1.1.12",
-    "superagent": "^4.1.0"
+    "superagent": "^4.1.0",
+    "supertest": "^3.4.2"
   },
   "devDependencies": {
     "eslint": "^5.14.0",
