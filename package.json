@@ -9,7 +9,10 @@
     "test": "npm run jest",
     "test:watch": "npm run jest -- --watch",
     "start": "node server.js",
-    "nodemon": "nodemon server.js"
+    "nodemon": "nodemon server.js",
+    "seed": "node seed.js",
+    "drop": "mongo futurama-api --eval 'db.dropDatabase()'",
+    "db-load-all": "npm run drop && npm run seed"
   },
   "jest": {
     "moduleNameMapper": {
