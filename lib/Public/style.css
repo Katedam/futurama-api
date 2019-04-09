@@ -1,0 +1,8 @@
+header {
+  background: #1a5354ff;
+  color: #ade2d0ff;
+}
+
+header.h1 {
+  text-align: center;
+}
