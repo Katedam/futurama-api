@@ -78,7 +78,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Professor Farnsworth') {
         return {
           ...quoteObj,
-          character: 'professor-farnsworth',
+          character: 'Professor-farnsworth',
           image: professorFarnsworth,
           quote
         };
@@ -86,7 +86,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Zapp Brannigan') {
         return {
           ...quoteObj,
-          character: 'zapp-brannigan',
+          character: 'Zapp-brannigan',
           image: zappBrannigan,
           quote
         };
@@ -108,7 +108,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Linda the Reporter') {
         return {
           ...quoteObj,
-          character: 'linda-the-reporter',
+          character: 'Linda-the-reporter',
           image: lindaTheReporter,
           quote
         };
@@ -116,7 +116,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Dr. Zoidberg') {
         return {
           ...quoteObj,
-          character: 'dr-zoidberg',
+          character: 'Dr-zoidberg',
           image: drZoidberg,
           quote
         };
@@ -131,7 +131,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Bob Barker') {
         return {
           ...quoteObj,
-          character: 'bob-barker',
+          character: 'Bob-barker',
           image: bobBarker,
           quote
         };
@@ -146,7 +146,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Morgan Proctor') {
         return {
           ...quoteObj,
-          character: 'morgan-proctor',
+          character: 'Morgan-proctor',
           image: morganProctor,
           quote
         };
@@ -154,7 +154,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Don-Bot') {
         return {
           ...quoteObj,
-          character: 'don-bot',
+          character: 'Don-bot',
           image: donBot,
           quote
         };
@@ -169,7 +169,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Robot Mob') {
         return {
           ...quoteObj,
-          character: 'robot-mob',
+          character: 'Robot-mob',
           image: robotMob,
           quote
         };
@@ -177,7 +177,7 @@ fetchFuturamaData()
       if(quoteObj.character === 'Giant Bender') {
         return {
           ...quoteObj,
-          character: 'giant-bender',
+          character: 'Giant-bender',
           image: giantBender,
           quote
         };
