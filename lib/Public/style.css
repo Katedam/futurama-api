@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Futurama Alien Alphabet One";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futurama Alien Alphabet One"),
+    url("../assets/fr-fal1.woff") format("woff");
+}
+@font-face {
+  font-family: "Futurama Alien Alphabet Two";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futurama Alien Alphabet Two"),
+    url("../assets/fr-fal2.woff") format("woff");
+}
+@font-face {
+  font-family: "Futurama Title Font";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futurama Title Font"),
+    url("../assets/fr-title.woff") format("woff");
+}
+@font-face {
+  font-family: "Futurama Bold Font";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futurama Bold Font"), url("../assets/fr-bold.woff") format("woff");
+}
+
 header {
   background: #1a5354ff;
   color: #ade2d0ff;
@@ -5,4 +33,5 @@ header {
 
 header.h1 {
   text-align: center;
+  font-family: "Futurama Title Font";
 }
