@@ -38,12 +38,14 @@ fetchFuturamaData()
       if(quoteObj.character === 'Bender') {
         return {
           ...quoteObj,
-          image: bender        };
+          image: bender        
+        };
       } 
       if(quoteObj.character === 'Leela') {
         return {
           ...quoteObj,
-          image: leela        };
+          image: leela        
+        };
       }
       if(quoteObj.character === 'Fry') {
         return {
