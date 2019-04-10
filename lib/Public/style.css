@@ -24,12 +24,19 @@ footer {
 }
 
 footer {
-  padding: 0.3em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
 h6 {
+  font-size: 12px;
   font-weight: 200;
-  color: black;
+  margin: 0;
 }
 
 .planet-express {
@@ -80,6 +87,10 @@ section {
   border-bottom: #228c9c solid 4px;
 }
 
+.docs img {
+  float: right;
+}
+
 .docs span {
   font-weight: 700;
   color: #228c9c;
@@ -93,12 +104,14 @@ section {
   background-color: #c0e9d1;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 0;
 }
 
 .chars h1 {
   color: #0b4644;
   border-bottom: #7f5098 solid 4px;
   margin-bottom: 0.5em;
+  margin-top: 0;
 }
 
 .chars p {
