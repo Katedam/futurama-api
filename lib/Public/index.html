@@ -9,40 +9,61 @@
   </head>
   <body>
     <header>
-      <h1>
+      <img
+        class="planet-express"
+        src="https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554871230/planet-express.png"
+        alt="Planet Express Ship from Futurama"
+      />
+      <h2>Good news everyone!</h2>
+      <h1 class="title">
         Futurama API
       </h1>
     </header>
     <main>
-      <section>
+      <section class="docs">
         <h1>Documentation</h1>
         <ul>
-          'GET'
-          <li>futuramaapi.herokuapp.com/api/quotes</li>
-          <li>futuramaapi.herokuapp.com/api/quotes/&lt;count&gt;</li>
           <li>
-            futuramaapi.herokuapp.com/api/characters/&lt;character name&gt;
+            <span>Get All Quotes > </span>futuramaapi.herokuapp.com/api/quotes
           </li>
           <li>
+            <span>Get 'count' Quotes > </span
+            >futuramaapi.herokuapp.com/api/quotes/&lt;count&gt;
+          </li>
+          <li>
+            <span>Get All Quotes By A Character > </span
+            >futuramaapi.herokuapp.com/api/characters/&lt;character name&gt;
+          </li>
+          <li>
+            <span>Get 'count' Quotes By A Character > </span>
             futuramaapi.herokuapp.com/api/characters/&lt;character
             name&gt;/&lt;count&gt;
           </li>
         </ul>
-
+      </section>
+      <section class="chars">
+        <h1>Characters</h1>
+        <p>
+          Characters with 2+ names should include '-'. (example:
+          /api/characters/zapp-brannigan)
+        </p>
         <ul>
-          characters
           <li>Fry</li>
           <li>Leela</li>
           <li>Professor Farnsworth</li>
           <li>Amy</li>
           <li>Lurr</li>
           <li>Zapp Brannigan</li>
+        </ul>
+        <ul>
           <li>Dr Zoidberg</li>
           <li>Linda the reporter</li>
           <li>Bob Barker</li>
           <li>Hermes</li>
           <li>Amy</li>
           <li>Morgan Proctor</li>
+        </ul>
+        <ul>
           <li>Mom</li>
           <li>Robot Mob</li>
           <li>Giant Bender</li>
@@ -51,5 +72,8 @@
         </ul>
       </section>
     </main>
+    <footer>
+      <h6>By Kate Dameron</h6>
+    </footer>
   </body>
 </html>
