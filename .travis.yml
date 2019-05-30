@@ -4,3 +4,4 @@ services:
   - mongodb
 deploy:
   provider: heroku
+env: MONGODB_URI=mongodb://127.0.0.1:27017/futurama
