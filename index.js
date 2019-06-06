@@ -11,7 +11,7 @@ const {
 
 
 module.exports = () => {
-  return request.get('https://futurama.fandom.com/wiki/Characters')
+  request.get('https://futurama.fandom.com/wiki/Characters')
     .then(parseAndCollectNames)
     .then(names => {
       return Promise.all(names.map((name, i) => {
@@ -28,7 +28,7 @@ module.exports = () => {
             characterDetails.name = findName(html);
             
             findKeys(html).forEach((key, i) => {
-              key === 'Earth' ? key = 'planet' : key;
+              key === 'Earth' ? key = 'Planet' : key;
               key && values ? characterDetails[key] = values[i] : '';
             });
             
@@ -38,8 +38,7 @@ module.exports = () => {
             if(error) {
               return {};
             }
-          })
-          .then(console.log);
+          });
       }));
     });
 };

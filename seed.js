@@ -13,9 +13,6 @@ fetchFuturamaQuotes()
   .finally(() => mongoose.connection.close());
 
 fetchFuturamaCharacters()
-  .then(chars => {
-    
-  })
   .then(chars => Character.create(chars))
   .finally(() => mongoose.connection.close());
 
