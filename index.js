@@ -28,6 +28,7 @@ module.exports = () => {
             characterDetails.name = findName(html);
             
             findKeys(html).forEach((key, i) => {
+              key === 'Earth' ? key = 'planet' : key;
               key && values ? characterDetails[key] = values[i] : '';
             });
             
@@ -37,7 +38,8 @@ module.exports = () => {
             if(error) {
               return {};
             }
-          });
+          })
+          .then(console.log);
       }));
     });
 };
