@@ -2,34 +2,45 @@ const request = require('superagent');
 const { parse } = require('node-html-parser');
 const {
   parseAndCollectNames,
-  trimResultToJustCharacterNames,
   getCharacterProfile,
   findKeys,
   findValues,
+  findImage,
   findName
 } = require('./lib/services/scraperHelpers');
 
 
-request.get('https://futurama.fandom.com/wiki/Characters')
-  .then(parseAndCollectNames)
-  .then(trimResultToJustCharacterNames)
-  .then(() => {
-    const character = 'Bender_Bending_Rodríguez';
-    return getCharacterProfile(character);
-  })
-  .then(res => res.text)
-  .then(parse)
-  .then(html => {
-    const characterDetails = {};
-    const values = findValues(html);
+module.exports = () => {
+  return request.get('https://futurama.fandom.com/wiki/Characters')
+    .then(parseAndCollectNames)
+    .then(names => {
+      return Promise.all(names.map((name, i) => {
+        name = i >= 323 && i <= 426 ? `${name}'s head` : name;
+        getCharacterProfile(name)
+          .then(res => res.text)
+          .then(parse)
+          .then(html => {
+            const characterDetails = {};
+          
+            characterDetails.picUrl = findImage(html);
 
-    characterDetails.name = findName(html);
-
-    findKeys(html).forEach((key, i) => characterDetails[key] = values[i]);
-
-    return characterDetails;
-  })
-  .then(console.log);
+            const values = findValues(html);
+            characterDetails.name = findName(html);
+            
+            findKeys(html).forEach((key, i) => {
+              key && values ? characterDetails[key] = values[i] : '';
+            });
+            
+            return characterDetails;
+          })
+          .catch(error => {
+            if(error) {
+              return {};
+            }
+          });
+      }));
+    });
+};
 
 
 
