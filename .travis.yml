@@ -4,7 +4,7 @@ services:
   - mongodb
 deploy:
   provider: heroku
-  app: futurama-api
+  app: futuramaapi
   api_key:
     secure: "znCThVXQ2pgMZbMGMdLcQaTtDDH91/tfD6YUJI2lYXBISadZqU/wNXdKBG377ZfeJgrCUmxBdQXZRORseLr7OvyIYY7rEQ4uH5qsaMMP0ox55VDadCE7kVAmK6R4iEvmZGtCUA8mqGSt1vk7Qq8GoEnH2ZbBl5V7Thz2odGoN1wA9wYY/0gr/+XAskMSYm9kmLZxRZ9swc/EeioCoJKtThdG3g4l2hs616YaCQaphocsTywlkI1iJXm09Iluo0hnJTC3NaWFv/CVlvYh/NKr8DHl2a7cb0zcGiRkDuObEEDEyVizKzkL7r6+8lkyE6gVLbOPWTtdIn7mIkmHVYRppxTBJSPnKl9laxcPqhZJEqkgnJOSL+24o+1dJvJR1ZWBWydTBA4O9PMxyf7XVODHNZkaGN+hEZcfiOc5KKYeCabSlPcIOox5Bu074ENz+ZVc+xt1pTAC3jDQ1CUW72JbJOYJtKHeU7w/gEfCgiXWbGaIURmgdsw6pjSLtcUIqp8A04ecz9uYt4s16x7rH5+8gutaylKIAs84HJeuUCbF4WGE3lL1GV8co2UHB9CvS9Z7URJj1QAQlBlIU+Tnqh4XJky1cyA+mSB1el/DzJuC4qlVyc5851WuIZDJpKsFOChPTNSKS59TBoqSPao4EGM7hgb2+HUnlwx+uz/JlxVaCxs="
 env: MONGODB_URI=mongodb://127.0.0.1:27017/futurama
