@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     'character': 'Bender',
     'quote': 'Bite my shiny metal ass.',
