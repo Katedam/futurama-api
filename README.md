@@ -2,7 +2,12 @@
 
 Author: [Kate Dameron](https://github.com/Katedam)
 
-[SITE](https://futuramaapi.herokuapp.com/)
+```
+NOTICE! The host url has changed due to Heroku's restructuring! The new host is:
+https://futurama-api.fly.dev
+```
+
+[SITE](https://futurama-api.fly.dev)
 
 ## Overview
 
@@ -24,11 +29,7 @@ All routes are GET requests
 '/api/characters/:character/:count
 -> Returns random ':count' for the ':character'
 
-## Technologies used
-
-Node.js, [MongoDB](https://www.mongodb.com/what-is-mongodb), [Express](https://www.npmjs.com/package/express), [Jest](https://www.npmjs.com/package/jest), [SuperTest](https://www.npmjs.com/package/supertest), [nodemon](https://www.npmjs.com/package/nodemon), [dotenv](https://www.npmjs.com/package/dotenv), [Mongoose](https://www.npmjs.com/package/mongoose), [morgan](https://www.npmjs.com/package/morgan), [SuperAgent](https://www.npmjs.com/package/superagent)
-
-## Getting Started
+## Contributing
 
 I welcome contributions and suggestions for improvement via Pull Requests.
 
